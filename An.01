@@ -1,0 +1,50 @@
+ADD
+# two ways to add keys/values in dictionary
+
+a = {
+   " Celestial Bodies":	"Jokha Alharthi",
+   "Cheque book":"Vasdev Mohi",
+   "The Overstory":	"Richard Powers",
+   " Exam Warriors":"PM Narendra Modi"
+}
+b ={ 
+   "Adventures of Tom Sawyer": "Mark Twain",
+   "Alice in Wonderland": "Lewis Carrol",
+   "Agni Veena": "Kazi Nasrul",
+   "Islam	Ancient Mariner": "Coleridge",
+	 "Arms and the Man": "G.B.Shaw"
+}  
+#num. 1 
+a["You Better Be Lightning"] = "Andrea Gibson"
+print(a)
+
+#num. 2 
+a.update({"You Better Be Lightning":"Andrea Gibson"})
+# With this update method, we just dont add values, we can also merge dictionaries. 
+a.update(b)
+print(a)
+
+DELETE OR CLEAR
+# there are 2 ways we can delete a single item from the dictionary.
+
+firstCar = {
+    "car name": "Motorwagen",
+    "inventor":"Karl Benz",
+    "invented in":1886
+}
+
+num.1 with del function
+del firstCar["car name"]
+print(firstCar)
+{'inventor': 'Karl Benz', 'invented in': 1886} ANS
+# with del key we can also delet entire dictionary
+
+num.2 with .pop function
+firstCar.pop("inventor")
+print(firstCar)
+{'car name': 'Motorwagen', 'invented in': 1886} ANS
+
+num.3 clear method
+firstCar.clear()
+print(firstCar)
+{}ANS
